@@ -1,18 +1,7 @@
-/* Program: Finding real roots of nonlinear
-   equation using Newton Raphson Method
-   Author: CodeSansar
-   Date: November 18, 2018 */
-#include<iostream>
-#include<iomanip>
-#include<math.h>
-#include<stdlib.h>
+#include<bits/stdc++.h>
 
-/* Defining equation to be solved.
-   Change this equation to solve another problem. */
 #define    f(x)    3*x - cos(x) -1
 
-/* Defining derivative of g(x).
-   As you change f(x), change this function also. */
 #define   g(x)   3 + sin(x)
 
 using namespace std;
@@ -21,11 +10,8 @@ int main()
 {
        float x0, x1, f0, f1, g0, e;
        int step = 1, N;
-
-       /* Setting precision and writing floating point values in fixed-point notation. */
      cout<< setprecision(6)<< fixed;
 
-     /* Inputs */
        cout<<"Enter initial guess: ";
        cin>>x0;
        cout<<"Enter tolerable error: ";
